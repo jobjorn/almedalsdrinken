@@ -1,0 +1,141 @@
+/* --- STYLE --- */
+
+html, body{
+	background-color:#dcdcdc;
+	margin:0;
+	background-image:url(./img/bodyBG.png);
+	font-family:Calibri, Tahoma, sans-serif;
+}
+
+p{
+	font-family:Calibri, Tahoma, sans-serif;
+}
+
+a:link,a:visited{
+	color:#000;
+	text-decoration: underline;
+}
+.whiteLink{
+	color:#ffffff !important;
+}
+
+h2, h4 { font-family: "Times New Roman", serif; text-transform: uppercase; font-weight: bold; text-align: center; }
+
+#locations h2, #locations h4 { color: white; }
+
+
+.ingress { color: #e63186; font-weight: bold; }
+
+.row { padding: 15px 0px; }
+
+#logo {
+	float:left;
+	margin: 30px 70px 0 0;
+}
+#slogan {
+	float:right;
+	margin-top: 42px;
+}
+
+.headerimg {
+	width: 100%;
+	border: 10px solid white;
+	box-shadow: 2px 2px 2px #ccc;
+}
+
+#content, #locations, #bartender, #initiativ, #press {
+	padding: 15px;
+	box-shadow: 2px 2px 2px #ccc;
+}
+
+#content{
+	background: #fff;
+}
+
+#locations{
+	text-align:center;
+	background: #e63186; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e63186 0%, #F398C3 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e63186), color-stop(100%,#F398C3)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e63186 0%,#F398C3 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e63186 0%,#F398C3 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e63186 0%,#F398C3 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #e63186 0%,#F398C3 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e63186', endColorstr='#F398C3',GradientType=0 ); /* IE6-9 */
+}
+
+#bartender{
+	color: white;
+
+	background: #929314; /* Old browsers */
+	background: -moz-linear-gradient(top,  #929314 0%, #C3C41A 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#929314), color-stop(100%,#C3C41A)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #929314 0%,#C3C41A 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #929314 0%,#C3C41A 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #929314 0%,#C3C41A 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #929314 0%,#C3C41A 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#929314', endColorstr='#C3C41A',GradientType=0 ); /* IE6-9 */
+}
+
+.desc{
+	font-weight:bold;
+}
+
+
+#initiativ{
+	background-image: url(./img/bg_initiativ.png);
+}
+
+#press{
+	background-image: url(./img/bg_press.png);
+}
+
+#initiativ, #press {
+	background-size: cover;
+	border: 10px solid white;
+	text-align: center;
+	padding: 40px 50px;
+	color: white;
+}
+
+#initiativ img, #press img {
+	margin-bottom: 20px;
+}
+	
+#footer{
+	color:#e63186;
+	text-align:center;
+}
+#footer a {
+	color:#e63186;
+}
+
+
+
+
+ul, li{
+	list-style:none;
+	padding:0;
+	font-size:13px;	
+	margin:0;
+}
+
+ul.placesList li, .placesInfo{
+	color: #f0ff71;
+	text-align: center;
+	font-size: 13px;
+}
+ul.placesList li a { font-weight: bold; }
+
+
+ul.placesList {
+
+	text-align:center;
+
+}
+
+#platser { height: 255px; }
+#tider { height: 272px; }
+#platser li { height: 51px; }
+#tider li { height: 68px; }
+

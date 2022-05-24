@@ -1,0 +1,72 @@
+/* --- STYLE --- */
+
+html, body{
+	background-color:#F3F2CE;
+	background-image: url("./img/bg.png?ver=180609");
+	background-repeat: repeat;
+	margin:0;
+	font-family:"Arial", sans-serif;
+	font-size: 16px;
+}
+
+a:link,a:visited{
+	color:#4fae47;
+	text-decoration: underline;
+}
+
+h2, h4 { text-transform: uppercase; font-weight: bold; text-align: center; margin-top: 0; color: #4fae47; }
+
+#about h2, #about h4 { }
+
+
+.row {
+}
+
+#logo {
+	float:left;
+}
+#slogan {
+	float:right;
+}
+
+.headerimg {
+	background-color: white;
+	width: 100%;
+	padding: 10px;
+}
+
+#content, #about, #bartender, #initiativ, #press, #lansering, #drinkteam {
+	padding: 10px;
+	background-color: #fff;
+}
+
+#about
+
+}
+
+.desc{
+	font-weight:bold;
+}
+
+#initiativ {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#footer{
+	color:#fff;
+	text-align:center;
+}
+
+#footer a {
+	color:#fff;
+}
+
+
+.flexbox {
+	display: flex;
+	flex-direction: column;
+}
+.row > div > div, .row > div > img {
+	margin: 15px 0px;
+}

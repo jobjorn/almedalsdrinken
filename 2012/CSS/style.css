@@ -1,0 +1,267 @@
+/* --- STYLE --- */
+
+html, body{
+	background-color:#ce3c1a;
+	margin:0;
+	background-image:url(../IMG/bodyBG.png);
+	font-family:Calibri, Tahoma, sans-serif;
+}
+
+p{
+	font-size:13px;
+	font-family:Calibri, Tahoma, sans-serif;
+	line-height:18px;
+}
+
+h2{
+	color:#ffffff;
+	font-size:14px;
+	margin-bottom:3px;
+}
+	
+h3{
+	color:#000000;
+	font-size:14px;
+	margin-top:3px;
+	margin-bottom:18px;
+	font-weight:400;
+}
+
+ul, li{
+	list-style:none;
+	padding:0;
+	font-size:14px;	
+	margin:0;
+}
+
+li{
+	height:18px;
+}
+.lastLi{
+	margin-bottom:10px;	
+}
+
+.headerLi{
+	font-weight:900;	
+	margin-bottom:10px;	
+	color:#7c0a00;
+}
+
+.hr{
+	color:#9e2c11;
+	background-color:#9e2c11;
+	width:80%;
+	border:0;
+	height:2px;
+	margin:10px auto;
+}
+
+/* --- Main Containers --- */
+
+#container{
+	width:960px;
+	margin:auto;
+}
+
+#header{
+	height:160px;
+}
+
+.thirdC{
+	width:300px;
+	padding:10px;
+	height:440px;
+	float:left;
+	background-image:url(../IMG/thirdBG.png);
+}
+
+#middleRow{
+	background-image:url(../IMG/fauxBG.png);	
+}
+
+.narrow{
+	width:237px;
+	float:left;
+}
+
+#content{
+	width:420px;
+	/*height:400px;*/
+	float:left;
+	background-image:url(../IMG/contContBG.png);	
+	padding:20px 30px;
+}
+
+.containerRow{
+	display:table;
+}
+
+.halfC{
+	width:377px;
+	height:100px;
+	float:left;
+	text-align:center;
+	padding:50px;
+	padding-top:90px;
+	color:#ffffff;
+	font-size:14px;
+	line-height:20px;
+}
+
+#footer{
+	width:100%;
+	height:40px;
+	margin-top:30px;
+	float:none;
+	clear:both;
+	display:block;
+	background-image:url(../IMG/footerBG.png);
+	background-repeat:repeat-x;
+}
+
+#footerBox{
+	margin:auto;
+	color:#cb3e1d;
+	font-size:14px;
+	background-image:url(../IMG/bodyBG.png);
+	width:450px;
+	text-align:center;
+	font-weight:100;
+}
+
+#locations{
+	background-image:url(../IMG/buyHere2.png);
+	width:230px;
+	text-align:center;
+	padding-right:10px;
+	padding-top:70px;
+	/*height:380px;*/
+	position:relative;
+}
+
+#locationsList{
+	height:420px;
+	overflow:hidden;
+	position:relative;
+	
+}
+
+#places{
+	margin-top:5px;
+	height:130px;
+	overflow:hidden;
+	position:relative;
+	width:230px;
+	margin-bottom:5px;
+}
+
+#placesList{
+	position:relative;
+}
+
+#happenings{
+	margin-top:5px;
+	margin-bottom:5px;
+	height:120px;
+	overflow:hidden;
+	position:relative;
+	width:230px;
+}
+#happeningsList{
+	position:relative;
+}
+
+#bartender{
+	background-image:url(../IMG/bartenderBG.png);
+	height:460px;
+}
+
+#bartenderInterview{
+	margin:18px;
+	font-size:12px;
+}
+
+#bartenderInterview img{
+	margin:0 10px 10px 0;
+	float:left;
+}
+
+#initiativ{
+	background-image:url(../IMG/initiativ.png);
+}
+
+#pressKontakt{
+	background-image:url(../IMG/pressKontakt.png);	
+}
+
+/* --- SHADOWS ---*/
+.shadowRow{
+	padding-bottom:15px;
+	display:table;
+}
+
+.thirdShadow{
+		background-image:url(../IMG/underShadow.png);
+		width:320px;
+		height:10px;
+		float:left;
+}
+
+.narrowShadow{
+		background-image:url(../IMG/narrowShadow.png);
+		width:240px;
+		height:10px;
+		float:left;
+}
+
+.contentShadow{
+		background-image:url(../IMG/contentShadow.png);
+		width:480px;
+		height:10px;
+		float:left;
+}
+
+/* --- TEXT CLASSES --- */
+
+.ingress{
+	color:#cb3e1d;
+	font-weight:700;
+}
+	
+a:link,a:visited{
+	color:#000;
+}
+
+.whiteLink{
+
+	color:#ffffff !important;
+	
+}
+
+.blackLink{
+
+	color:#000 !important;
+	
+}
+	
+.quote{
+	color:#ffffff;
+	clear:both;
+}
+	
+.desc{
+	color:#000;
+	font-weight:600;
+	line-height:17px;
+}
+	
+#bartenderInterview p{
+	font-size:13px;
+}
+
+/* --- Effect Classes --- */
+
+.arrow{
+	/*height:6px;
+	/*background-color:black;*/
+}

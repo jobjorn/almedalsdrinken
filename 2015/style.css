@@ -1,0 +1,297 @@
+/* --- STYLE --- */
+
+html, body{
+	background-color:#e9ebdc;
+	margin:0;
+	background-image:url(img/bodyBG.png);
+	font-family:Calibri, Tahoma, sans-serif;
+}
+
+p{
+	font-size:12px;
+	font-family:Calibri, Tahoma, sans-serif;
+	line-height:18px;
+}
+
+h2{
+	color:#ffffff;
+	font-size:14px;
+	margin-bottom:3px;
+}
+	
+h3{
+	color:#000000;
+	font-size:14px;
+	margin-top:3px;
+	margin-bottom:18px;
+	font-weight:400;
+}
+
+ul, li{
+	list-style:none;
+	padding:0;
+	font-size:13px;	
+	margin:0;
+}
+
+li{
+	height:18px;
+}
+ul.placesList li, .placesInfo{
+	margin-bottom:40px;	
+	color: #f0ff71;
+	text-align: center;
+	font-size: 13px;
+}
+ul.placesList li a { font-weight: bold; }
+ul.placesList#tider li {
+	margin-bottom: 60px;	
+}
+
+ul.placesList {
+
+	text-align:center;
+	margin-left: 15px;
+	width: 200px;
+	height: auto;
+
+}
+ul#tider.placesList { margin-top: 20px; }
+
+ul.placesList#platser {margin-top: 20px; height: 200px;}
+ul.placesList#tider { height: 218px;}
+p.info {
+font-size: 0.8em;
+padding: 5px 15px 15px 15px;
+
+}
+h3.headerLi{
+	font-weight:900;	
+	margin-bottom:10px;	
+	color:#fff;
+	font-size: 0.9em;
+	margin: 0 0 15px;
+	padding:0;
+}
+
+.hr{
+	color:#841a06;
+	background-color:#841a06;
+	width:80%;
+	border:0;
+	height:2px;
+	margin:10px auto;
+}
+
+/* --- Main Containers --- */
+
+#container{
+	width:960px;
+	margin:auto;
+}
+
+#header{
+	height:160px;
+}
+
+.narrow{
+	width:237px;
+	float:left;
+}
+
+#content{
+	width:420px;
+	float:left;
+	background: #fff;	
+	margin: 0 10px;
+	padding:30px 30px 63px;
+}
+
+.containerRow{
+	display:table;
+	margin-bottom: 25px;
+}
+
+.halfC{
+	width:367px;
+	height:150px;
+	float:left;
+	text-align:center;
+	padding:50px;
+	padding-top:40px;
+	color:#ffffff;
+	font-size:12px;
+	line-height:20px;
+}
+
+#footer{
+	width:100%;
+	height:40px;
+	margin-top:30px;
+	float:none;
+	clear:both;
+	display:block;
+}
+
+#footerBox{
+	margin:auto;
+	color:#809615;
+	font-size:13px;
+	width:500px;
+	text-align:center;
+}
+#footerBox a {color:#809615;}
+
+#locations{
+	width:215px;
+	text-align:center;
+	padding-right:15px;
+	padding-top:30px;
+	
+	padding-bottom: 78px;
+	
+	background: #BCD02F; /* Old browsers */
+background: -moz-linear-gradient(top,  #BCD02F 0%, #D5DF79 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#BCD02F), color-stop(100%,#D5DF79)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #BCD02F 0%,#D5DF79 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #BCD02F 0%,#D5DF79 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #BCD02F 0%,#D5DF79 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #BCD02F 0%,#D5DF79 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#BCD02F', endColorstr='#D5DF79',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+
+
+#bartender{
+	height: auto;
+	width: 220px;
+	
+	background: #653A5D; /* Old browsers */
+background: -moz-linear-gradient(top,  #653A5D 0%, #8E5E7B 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#653A5D), color-stop(100%,#8E5E7B)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #653A5D 0%,#8E5E7B 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #653A5D 0%,#8E5E7B 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #653A5D 0%,#8E5E7B 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #653A5D 0%,#8E5E7B 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#653A5D', endColorstr='#8E5E7B',GradientType=0 ); /* IE6-9 */
+}
+
+#bartenderInterview{
+	margin:30px 18px 18px 18px;
+	font-size:12px;
+}
+
+#bartenderInterview img{
+	margin:0 10px 10px 0;
+	float:left;
+}
+
+#initiativ{
+	background: #fff url(img/bg_initiativ.png) 10px 10px no-repeat ;
+	margin-right: 10px;
+	width:370px;
+}
+
+#pressKontakt{
+	background: #fff url(img/bg_press.png)  10px 10px no-repeat;
+	width:370px;	
+}
+
+
+/* --- TEXT CLASSES --- */
+
+.ingress{
+	color:#89a30c;
+	font-weight:700;
+}
+	
+a:link,a:visited{
+	color:#000;
+}
+
+.whiteLink{
+
+	color:#ffffff !important;
+	
+}
+
+.blackLink{
+
+	color:#000 !important;
+	
+}
+	
+.quote{
+	color:#ffffff;
+	clear:both;
+}
+	
+.desc{
+	color:#fff;
+	font-weight:600;
+	line-height:17px;
+}
+	
+/* --- Effect Classes --- */
+
+.arrow{
+	/*height:6px;
+	/*background-color:black;*/
+}
+
+
+/*nya stilar 2013--------------------------------------*/
+
+/*header images*/
+img#logo {float:left; margin: 30px 70px 0 0;}
+img#slogan {float:left; margin-top: 42px;}
+
+.bilder {display: table; padding-bottom: 25px;}
+.bilder img {
+padding: 10px;
+margin-right: 10px;
+background: #fff;
+float:left;
+}
+
+.bilder img.last {margin-right: 0px;}
+
+
+.bilder img, .narrow, #content, .halfC
+{box-shadow: 2px 2px 2px #ccc;}
+
+p.leading {font-weight: bold;}
+
+
+/*footer lines*/
+#footer 
+{position: relative;
+overflow-x: hidden;
+}
+
+#footer .line {
+position: absolute;
+width: 2000px;
+height: 2px;
+background: #869015;
+overflow:hidden;
+bottom: 30px;
+}
+
+#footer .line.left{
+margin-right: 255px;
+right: 50%;
+}
+
+
+#footer .line.right{
+margin-left: 255px;
+left: 50%;
+}
+
+
+hr.red { border:none; height: 0; width: 200px; margin-left: 20px; margin-bottom: 15px; border-bottom: 1px solid #89a30c;}
+
+#locations h2 { margin-left: 15px; }

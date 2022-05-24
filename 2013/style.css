@@ -1,0 +1,279 @@
+/* --- STYLE --- */
+
+html, body{
+	background-color:#ce3c1a;
+	margin:0;
+	background-image:url(img/bodyBG.png);
+	font-family:Calibri, Tahoma, sans-serif;
+}
+
+p{
+	font-size:13px;
+	font-family:Calibri, Tahoma, sans-serif;
+	line-height:18px;
+}
+
+h2{
+	color:#ffffff;
+	font-size:14px;
+	margin-bottom:3px;
+}
+	
+h3{
+	color:#000000;
+	font-size:14px;
+	margin-top:3px;
+	margin-bottom:18px;
+	font-weight:400;
+}
+
+ul, li{
+	list-style:none;
+	padding:0;
+	font-size:14px;	
+	margin:0;
+}
+
+li{
+	height:18px;
+}
+.lastLi{
+	margin-bottom:20px;	
+	color: #fff595;
+}
+
+.last {
+font-size: 0.8em;
+padding: 15px ;
+}
+
+.headerLi{
+	font-weight:900;	
+	margin-bottom:10px;	
+	color:#7c0a00;
+}
+
+.hr{
+	color:#9e2c11;
+	background-color:#9e2c11;
+	width:80%;
+	border:0;
+	height:2px;
+	margin:10px auto;
+}
+
+/* --- Main Containers --- */
+
+#container{
+	width:960px;
+	margin:auto;
+}
+
+#header{
+	height:160px;
+}
+
+.narrow{
+	width:237px;
+	float:left;
+}
+
+#content{
+	width:400px;
+	height: 700px;
+	float:left;
+	background: #fff;	
+	margin: 0 10px;
+	padding:20px 30px;
+}
+
+.containerRow{
+	display:table;
+	margin-bottom: 25px;
+}
+
+.halfC{
+	width:367px;
+	height:115px;
+	float:left;
+	text-align:center;
+	padding:50px;
+	padding-top:75px;
+	color:#ffffff;
+	font-size:14px;
+	line-height:20px;
+}
+
+#footer{
+	width:100%;
+	height:40px;
+	margin-top:30px;
+	float:none;
+	clear:both;
+	display:block;
+}
+
+#footerBox{
+	margin:auto;
+	color:#cb3c48;
+	font-size:14px;
+	width:450px;
+	text-align:center;
+	font-weight:100;
+}
+#footerBox a {color:#cb3c48;}
+
+#locations{
+	background-image:url(img/rod.jpg);
+	width:230px;
+	height: 670px; /*reglerar höjd av vänstra kolumnens röda bakgrund*/
+	text-align:center;
+	padding-right:10px;
+	padding-top:70px;	
+	position:relative;
+}
+
+
+#placesList{
+margin-top: 20px;
+}
+
+#placesList ul li {
+
+margin: 15px 0;
+}
+
+#placesList li {
+		color: #fff595;
+	}
+
+
+#bartender{
+	background:url(img/gul.jpg) left top ;
+	height: auto;
+	width: 229px;
+		height:741px; /*reglerar höjd av högra kolumnens gula bakgrund*/
+}
+
+#bartenderInterview{
+	margin:90px 18px 18px 18px;
+	font-size:12px;
+}
+
+#bartenderInterview img{
+	margin:0 10px 10px 0;
+	float:left;
+}
+
+#initiativ{
+	background: #fff url(img/bg_initiativ.jpg) 10px 10px no-repeat ;
+	margin-right: 10px;
+	width:370px;
+}
+
+#pressKontakt{
+	background: #fff url(img/bg_press.jpg)  10px 10px no-repeat;	
+}
+
+
+/* --- TEXT CLASSES --- */
+
+.ingress{
+	color:#cb3e1d;
+	font-weight:700;
+}
+	
+a:link,a:visited{
+	color:#000;
+}
+
+.whiteLink{
+
+	color:#ffffff !important;
+	
+}
+
+.blackLink{
+
+	color:#000 !important;
+	
+}
+	
+.quote{
+	color:#ffffff;
+	clear:both;
+}
+	
+.desc{
+	color:#000;
+	font-weight:600;
+	line-height:17px;
+}
+	
+#bartenderInterview p{
+	font-size:13px;
+}
+
+/* --- Effect Classes --- */
+
+.arrow{
+	/*height:6px;
+	/*background-color:black;*/
+}
+
+
+/*nya stilar 2013--------------------------------------*/
+
+/*header images*/
+img#logo {float:left; margin: 30px 140px 0 0;}
+img#slogan {float:left; margin-top: 42px;}
+
+.bilder {display: table; padding-bottom: 25px;}
+.bilder img {
+padding: 10px; 
+background: #fff;
+float:left;
+}
+
+.bilder img:first-child {margin-right: 10px;}
+
+
+.bilder img, .narrow, #content, .halfC
+{box-shadow: 2px 2px 2px #ccc;}
+
+p.leading {font-weight: bold;}
+
+
+/*footer lines*/
+#footer 
+{position: relative;
+overflow-x: hidden;
+}
+
+#footer .line {
+position: absolute;
+width: 2000px;
+height: 2px;
+background: #cb3c48;
+overflow:hidden;
+}
+
+#footer .line.left{
+margin-right: 230px;
+right: 50%;
+bottom: 40px;
+}
+
+
+#footer .line.right{
+margin-left: 230px;
+left: 50%;
+}
+
+#footer .line.bottom {
+bottom: 35px;
+}
+
+#footer .line.top {
+bottom: 25px;
+}
