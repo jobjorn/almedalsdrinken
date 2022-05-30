@@ -1,0 +1,88 @@
+/* --- STYLE --- */
+
+/*
+- Bakgrund, mörkbrun: 2b1708
+- Blockfärg, Ljusgrön: b1e068
+- Blockfärg, Gul: e4d97e
+- Textfärg, vit: ffffff
+
+*/
+
+html, body{
+	background-color:#2b1708;
+/*	background-image: url("./bg.jpg");
+	background-size: cover;*/
+	margin:0;
+	font-family:"Arial", sans-serif;
+	font-size: 16px;
+}
+
+a:link,a:visited{
+	color:#000;
+	text-decoration: underline;
+}
+
+h2, h4 {
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 0;
+	color: #000;
+}
+h3 {
+color: #000;
+
+}
+
+#logo {
+	float:left;
+	margin: 0;
+	padding: 0px;
+}
+#slogan {
+	float:right;
+}
+
+.headerimg {
+	background-color: white;
+	width: 100%;
+	padding: 0px;
+}
+#row-logo { background-color: white; margin-left:0px; margin-right: 0px; margin-bottom: 15px; margin-top: 15px;}
+#row-logo div { padding-left: 0; padding-right: 0px; }
+
+.content, #about, #bartender, #initiativ, #press, #lansering, #drinkteam {
+	padding: 10px;
+	background-color: #b1e068;
+}
+
+.content {
+	background-color: #e4d97e;
+}
+
+.desc{
+	font-weight:bold;
+}
+
+#initiativ {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#footer{
+	color:#000;
+	text-align:center;
+}
+
+#footer a {
+	color:#000;
+}
+
+
+.flexbox {
+	display: flex;
+	flex-direction: column;
+}
+.row > div > div, .row > div > img {
+	margin: 15px 0px;
+}
