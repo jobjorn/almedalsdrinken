@@ -44,6 +44,48 @@ color: #1e2d01;
 	float:right;
 }
 
+.header-images {
+	display: flex;
+	align-items: stretch;
+}
+.header-images div {
+	flex-grow: 1;
+	background-color: #e4d97e;
+	margin: 15px;
+	flex-basis: 20%;
+}
+.header-images .ruta1 {
+	background-image: url("./header1.png");
+	background-position: center;
+	background-size: cover;
+}
+
+.header-images .ruta3 {
+	background-image: url("./header3.png");
+	background-position: center;
+	background-size: cover;
+}
+
+
+.header-images .receptet {
+	flex-basis: 30%;
+	padding: 15px;
+}
+
+.header-images .almedalsmix {
+	display: flex;
+	gap: 15px;
+}
+
+.header-images ul {
+	flex-basis: 40%;
+	flex-grow: 1;
+
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
 .headerimg {
 	background-color: white;
 	width: 100%;
