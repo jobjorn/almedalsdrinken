@@ -27,10 +27,10 @@ h2, h4 {
 	font-weight: bold;
 	text-align: center;
 	margin-top: 0;
-	color: #000;
+	color: #1e2d01;
 }
 h3 {
-color: #000;
+color: #1e2d01;
 
 }
 
@@ -38,6 +38,7 @@ color: #000;
 	float:left;
 	margin: 0;
 	padding: 0px;
+	max-width: 100%;
 }
 #slogan {
 	float:right;
@@ -54,6 +55,7 @@ color: #000;
 .content, #about, #bartender, #initiativ, #press, #lansering, #drinkteam {
 	padding: 10px;
 	background-color: #b1e068;
+	color: #1e2d01;
 }
 
 .content {
