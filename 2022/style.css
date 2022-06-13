@@ -22,7 +22,7 @@ a:link,a:visited{
 	text-decoration: underline;
 }
 
-h2, h4 {
+h1, h2, h4 {
 	text-transform: uppercase;
 	font-weight: bold;
 	text-align: center;
@@ -30,8 +30,22 @@ h2, h4 {
 	color: #1e2d01;
 }
 h3 {
-color: #1e2d01;
+	color: #1e2d01;
+}
 
+#row-logo h1 {
+	hyphens: manual;
+	font-size: 5em;
+	text-transform: none;
+}
+#row-logo h2 {
+	font-size: 3em;
+	text-transform: none;
+}
+
+#row-logo div {
+	background-color: #b1e068;
+	padding: 45px;
 }
 
 #logo {
@@ -66,6 +80,7 @@ color: #1e2d01;
 	background-size: cover;
 }
 
+ul li { hyphens: manual; }
 
 .header-images .receptet {
 	flex-basis: 30%;
@@ -114,12 +129,12 @@ color: #1e2d01;
 }
 
 #footer{
-	color:#000;
+	color:white;
 	text-align:center;
 }
 
 #footer a {
-	color:#000;
+	color:white;
 }
 
 
