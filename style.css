@@ -4,53 +4,41 @@
 
 html, body{
 	background-color:#ffeeb6;
-	/*background-image: url("./bg.jpg");
-	background-size: cover;*/
 	margin:0;
 	font-family: 'Work Sans', sans-serif;
-	font-size: 16px;
 	color: #fff;
 }
+body {
+	display: flex;
+	justify-content: center;
+}
 
-a:link,a:visited{
+a:link, a:visited{
 	color:#ffeeb6;
 	text-decoration: underline;
 }
 
-h1 {
+h1, h2, h3, h4, #subtitle {
+	font-weight: normal;
+	color: #fff;
 	font-family: 'Gloock', serif;
-	text-align: center;
-	font-size: 5em;
-
+	margin-top: 0;
 }
-#row-logo div {
+h1 {
+	font-size: 5em;
+}
+
+#row-logo {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 }
-#row-logo div #subtitle {
-	font-family: 'Gloock', serif;
+#row-logo #subtitle {
 	text-align: center;
-	font-size: 4em;
+	font-size: 3em;
 	background-color: #5e2612;
 	padding: 15px 100px;
 }
-h2, h3, h4 {
-	font-weight: bold;
-	margin-top: 0;
-	color: #fff;
-	font-family: 'Gloock', serif;
-}
-
-#images {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	align-items: stretch;
-	gap: 30px;
-	margin-top: 30px;
-	margin-bottom: 15px;
-}
-
 
 
 #image1 {
@@ -58,40 +46,14 @@ h2, h3, h4 {
 	background-size: cover;
 	background-position: center;
 }
-
-#recipe {
-	background-color: #faa02e;
-}
-
 #image3 {
 	background-image: url("header3.jpg");
 	background-size: cover;
 	background-position: center;
 }
 
-
-#logo {
-	float:left;
-	margin: 0;
-	padding: 10px;
-}
-#slogan {
-	float:right;
-}
-
-#row-logo {
-	background-color: #faa02e;
-	margin-left:0px;
-	margin-right: 0px;
-	margin-bottom: 15px;
-	margin-top: 15px;
-}
-#row-logo > div { 
-padding: 30px;
-}
-
-.content, #recipe, #about, #bartender, #initiativ, #press, #lansering, #drinkteam {
-	padding: 30px;
+#row-logo, .content, #recipe, #about, #bartender, #initiativ, #press, #lansering, #drinkteam {
+	padding: 1em;
 	background-color: #faa02e;
 }
 
@@ -100,9 +62,6 @@ padding: 30px;
 	font-weight:bold;
 }
 
-#initiativ {
-	margin-bottom: 30px;
-}
 
 #footer, #footer a{
 	color:#faa02e;
@@ -110,10 +69,56 @@ padding: 30px;
 }
 
 
-.flexbox {
-	display: flex;
-	flex-direction: column;
+
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	gap: 1em;
+	max-width: 960px;
 }
-.row > div > div, .row > div > img {
-	margin: 15px 0px;
+
+#row-logo {
+	grid-column: 1 / span 12;
+}
+.images {
+	grid-row: 2 / span 1;
+}
+#image1 {
+	grid-column: 1 / span 4;
+}
+#recipe {
+	grid-column: 5 / span 4;
+}
+#image3 {
+	grid-column: 9 / span 4;
+}
+.content {
+	grid-row: 3 / span 2;
+	grid-column: 4 / span 6;
+}
+#about {
+	grid-row: 3 / span 1;
+	grid-column: 1 / span 3;
+}
+#lansering {
+	grid-row: 4 / span 1;
+	grid-column: 1 / span 3;
+}
+#bartender {
+	grid-row: 3 / span 2;
+	grid-column: 10 / span 3;
+
+}
+#initiativ {
+	grid-row: 5 / span 1;
+	grid-column: 1 / span 6;
+}
+#press {
+	grid-row: 5 / span 1;
+	grid-column: 7 / span 6;
+}
+#footer {
+	grid-row: 6 / span 1;
+	grid-column: 1 / span 12;
 }
