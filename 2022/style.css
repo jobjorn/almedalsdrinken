@@ -1,61 +1,122 @@
 /* --- STYLE --- */
 
+/*
+- Bakgrund, mörkbrun: 2b1708
+- Blockfärg, Ljusgrön: b1e068
+- Blockfärg, Gul: e4d97e
+- Textfärg, vit: ffffff
+
+*/
+
 html, body{
-	background-color:#ed9ea4;
-	background-image: url("./bg.jpg");
-	background-size: cover;
+	background-color:#2b1708;
+/*	background-image: url("./bg.jpg");
+	background-size: cover;*/
 	margin:0;
 	font-family:"Arial", sans-serif;
 	font-size: 16px;
 }
 
 a:link,a:visited{
-	color:#ed9ea4;
+	color:#000;
 	text-decoration: underline;
 }
 
-h2, h4 {
+h1, h2, h4 {
 	text-transform: uppercase;
 	font-weight: bold;
 	text-align: center;
 	margin-top: 0;
-	color: #ed9ea4;
+	color: #1e2d01;
 }
 h3 {
-color: #ed9ea4;
-
+	color: #1e2d01;
 }
 
-#about h2, #about h4 { }
+#row-logo h1 {
+	hyphens: manual;
+	font-size: 5em;
+	text-transform: none;
+}
+#row-logo h2 {
+	font-size: 3em;
+	text-transform: none;
+}
 
-
-.row {
+#row-logo div {
+	background-color: #b1e068;
+	padding: 45px;
 }
 
 #logo {
 	float:left;
 	margin: 0;
-	padding: 10px;
+	padding: 0px;
+	max-width: 100%;
 }
 #slogan {
 	float:right;
 }
 
+.header-images {
+	display: flex;
+	align-items: stretch;
+}
+.header-images div {
+	flex-grow: 1;
+	background-color: #e4d97e;
+	margin: 15px;
+	flex-basis: 20%;
+}
+.header-images .ruta1 {
+	background-image: url("./header1.png");
+	background-position: center;
+	background-size: cover;
+}
+
+.header-images .ruta3 {
+	background-image: url("./header3.png");
+	background-position: center;
+	background-size: cover;
+}
+
+ul li { hyphens: manual; }
+
+.header-images .receptet {
+	flex-basis: 30%;
+	padding: 15px;
+}
+
+.header-images .almedalsmix {
+	display: flex;
+	gap: 15px;
+}
+
+.header-images ul {
+	flex-basis: 40%;
+	flex-grow: 1;
+
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
 .headerimg {
 	background-color: white;
 	width: 100%;
-	padding: 10px;
+	padding: 0px;
 }
 #row-logo { background-color: white; margin-left:0px; margin-right: 0px; margin-bottom: 15px; margin-top: 15px;}
 #row-logo div { padding-left: 0; padding-right: 0px; }
 
 .content, #about, #bartender, #initiativ, #press, #lansering, #drinkteam {
 	padding: 10px;
-	background-color: #fff;
+	background-color: #b1e068;
+	color: #1e2d01;
 }
 
-#about
-
+.content {
+	background-color: #e4d97e;
 }
 
 .desc{
@@ -68,12 +129,12 @@ color: #ed9ea4;
 }
 
 #footer{
-	color:#fff;
+	color:white;
 	text-align:center;
 }
 
 #footer a {
-	color:#fff;
+	color:white;
 }
 
 
