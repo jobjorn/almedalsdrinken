@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloock&family=Work+Sans&display=swap");
+
+/* --- STYLE --- */
+
+html,
+body {
+  background-color: #ffeeb6;
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+  color: #fff;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+
+a:link,
+a:visited {
+  color: #ffeeb6;
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+#subtitle {
+  font-weight: normal;
+  color: #fff;
+  font-family: "Gloock", serif;
+  margin: 0;
+}
+h1 {
+  font-size: min(5em, 7vw);
+}
+
+#row-logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#row-logo #subtitle {
+  text-align: center;
+  font-size: min(3em, 6vw);
+  background-color: #5e2612;
+  padding: 0.25em 8vw;
+}
+
+#image1 {
+  background-image: url("header1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#image3 {
+  background-image: url("header3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  margin: 1em;
+}
+
+#row-logo,
+.content,
+#recipe,
+#about,
+#bartender,
+#initiativ,
+#press,
+#lansering,
+#drinkteam {
+  padding: 1em;
+  background-color: #faa02e;
+}
+
+.desc {
+  font-weight: bold;
+}
+
+#footer,
+#footer a {
+  color: #faa02e;
+  text-align: center;
+}
+
+@media (min-width: 860px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1em;
+    max-width: 960px;
+  }
+  #row-logo {
+    grid-column: 1 / span 12;
+  }
+  .images {
+    grid-row: 2 / span 1;
+  }
+  #image1 {
+    grid-column: 1 / span 4;
+  }
+  #recipe {
+    grid-column: 5 / span 4;
+  }
+  #image3 {
+    grid-column: 9 / span 4;
+  }
+  .content {
+    grid-row: 3 / span 2;
+    grid-column: 4 / span 6;
+  }
+  #about {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 3;
+  }
+  #lansering {
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 3;
+  }
+  #bartender {
+    grid-row: 3 / span 2;
+    grid-column: 10 / span 3;
+  }
+  #initiativ {
+    grid-row: 5 / span 1;
+    grid-column: 1 / span 6;
+  }
+  #press {
+    grid-row: 5 / span 1;
+    grid-column: 7 / span 6;
+  }
+  #footer {
+    grid-row: 6 / span 1;
+    grid-column: 1 / span 12;
+  }
+}
+
+@media (max-width: 860px) {
+  .container {
+    max-width: 100%;
+  }
+  #row-logo,
+  .images,
+  .content,
+  #about,
+  #lansering,
+  #bartender,
+  #initiativ,
+  #press {
+    margin-bottom: 1em;
+  }
+  #image1 {
+    width: 100%;
+    aspect-ratio: 2 / 1;
+  }
+  #image3 {
+    width: 100%;
+    aspect-ratio: 2 / 1;
+  }
+}
