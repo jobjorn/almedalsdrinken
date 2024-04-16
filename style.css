@@ -95,8 +95,7 @@ body {
   font-style: normal;
   font-size: 4em;
 }
-body > div {
-}
+
 a {
   display: grid;
   place-items: center;
@@ -140,7 +139,4 @@ a {
       transform: scale(1.2);
     }
   }
-}
-
-.roboto-slab {
 }
