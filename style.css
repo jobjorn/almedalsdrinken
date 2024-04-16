@@ -1,161 +1,146 @@
-@import url("https://fonts.googleapis.com/css2?family=Gloock&family=Work+Sans&display=swap");
-
-/* --- STYLE --- */
-
-html,
-body {
-  background-color: #ffeeb6;
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
   margin: 0;
-  font-family: "Work Sans", sans-serif;
-  color: #fff;
 }
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
 body {
-  display: flex;
-  justify-content: center;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
-
-a:link,
-a:visited {
-  color: #ffeeb6;
-  text-decoration: underline;
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
 }
-
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p,
 h1,
 h2,
 h3,
 h4,
-#subtitle {
-  font-weight: normal;
-  color: #fff;
-  font-family: "Gloock", serif;
-  margin: 0;
+h5,
+h6 {
+  overflow-wrap: break-word;
 }
-h1 {
-  font-size: min(5em, 7vw);
-}
-
-#row-logo {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-#row-logo #subtitle {
-  text-align: center;
-  font-size: min(3em, 6vw);
-  background-color: #5e2612;
-  padding: 0.25em 8vw;
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
 }
 
-#image1 {
-  background-image: url("header1.jpg");
+@media (orientation: landscape) {
+  body {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+@media (orientation: portrait) {
+  body {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+body {
+  display: grid;
+  min-height: 100svh;
+  min-width: 100svw;
+  color: white;
+  background-color: black;
+  text-shadow: 0px 0px 15px black;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 4em;
+}
+body > div {
+}
+a {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+.image {
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+  background-position: center center;
   background-size: cover;
-  background-position: center;
-}
-#image3 {
-  background-image: url("header3.jpg");
-  background-size: cover;
-  background-position: center;
-}
+  background-repeat: no-repeat;
 
-.container {
-  margin: 1em;
+  a {
+    position: relative;
+    z-index: 1;
+  }
 }
-
-#row-logo,
-.content,
-#recipe,
-#about,
-#bartender,
-#initiativ,
-#press,
-#lansering,
-#drinkteam {
-  padding: 1em;
-  background-color: #faa02e;
-}
-
-.desc {
-  font-weight: bold;
-}
-
-#footer,
-#footer a {
-  color: #faa02e;
-  text-align: center;
-}
-
-@media (min-width: 860px) {
-  .container {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 1em;
-    max-width: 960px;
+.zoom-in,
+.zoom-out {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    background-size: cover;
+    transform-origin: center;
+    transition: transform 0.1s ease-in-out;
+    transform: scale(1.1);
   }
-  #row-logo {
-    grid-column: 1 / span 12;
-  }
-  .images {
-    grid-row: 2 / span 1;
-  }
-  #image1 {
-    grid-column: 1 / span 4;
-  }
-  #recipe {
-    grid-column: 5 / span 4;
-  }
-  #image3 {
-    grid-column: 9 / span 4;
-  }
-  .content {
-    grid-row: 3 / span 2;
-    grid-column: 4 / span 6;
-  }
-  #about {
-    grid-row: 3 / span 1;
-    grid-column: 1 / span 3;
-  }
-  #lansering {
-    grid-row: 4 / span 1;
-    grid-column: 1 / span 3;
-  }
-  #bartender {
-    grid-row: 3 / span 2;
-    grid-column: 10 / span 3;
-  }
-  #initiativ {
-    grid-row: 5 / span 1;
-    grid-column: 1 / span 6;
-  }
-  #press {
-    grid-row: 5 / span 1;
-    grid-column: 7 / span 6;
-  }
-  #footer {
-    grid-row: 6 / span 1;
-    grid-column: 1 / span 12;
+  &:focus,
+  &:hover {
+    &::after {
+      transform: scale(1.2);
+    }
   }
 }
 
-@media (max-width: 860px) {
-  .container {
-    max-width: 100%;
-  }
-  #row-logo,
-  .images,
-  .content,
-  #about,
-  #lansering,
-  #bartender,
-  #initiativ,
-  #press {
-    margin-bottom: 1em;
-  }
-  #image1 {
-    width: 100%;
-    aspect-ratio: 2 / 1;
-  }
-  #image3 {
-    width: 100%;
-    aspect-ratio: 2 / 1;
-  }
+.roboto-slab {
 }
